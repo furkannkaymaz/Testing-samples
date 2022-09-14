@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.test.core.app.ActivityScenario
 import androidx.test.core.app.ApplicationProvider
 
-inline fun <reified T : Fragment> launchFragmentInHiltContainer(
+inline fun <reified T : Fragment> launchFragmentInHiltContainerAndroidTest(
     fragmentArgs: Bundle? = null,
     @StyleRes themeResId: Int = androidx.fragment.testing.R.style.FragmentScenarioEmptyFragmentActivityTheme,
     crossinline action: Fragment.() -> Unit = {}
