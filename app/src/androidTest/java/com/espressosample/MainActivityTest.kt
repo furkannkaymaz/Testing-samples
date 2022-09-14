@@ -13,8 +13,7 @@ import dagger.hilt.android.testing.HiltTestApplication
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import org.robolectric.RobolectricTestRunner
-import org.robolectric.annotation.Config
+
 
 
 @RunWith(AndroidJUnit4ClassRunner::class)
@@ -36,11 +35,6 @@ class MainActivityTest {
 
         onView(withId(R.id.username)).check(matches(withText("Furkan")))
         Thread.sleep(500)
-    }
-
-    fun checkNavigation(){
-      //  val navController = mock()
-
     }
 
 }

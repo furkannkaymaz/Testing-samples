@@ -18,5 +18,9 @@
         android:id="@+id/secondFragment"
         android:name="com.espressosample.SecondFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_emptyFragment"
+            app:destination="@id/emptyFragment" />
+    </fragment>
 </navigation>

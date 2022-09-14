@@ -14,6 +14,8 @@ import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
 
+// testing using hilt + RobolectricTestRunner with hiltExt
+
 @HiltAndroidTest
 @RunWith(RobolectricTestRunner::class)
 @Config(
