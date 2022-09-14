@@ -11,7 +11,6 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
-
 @RunWith(AndroidJUnit4ClassRunner::class)
 class MainActivityTest {
 
@@ -31,6 +30,11 @@ class MainActivityTest {
 
         onView(withId(R.id.username)).check(matches(withText("Furkan")))
         Thread.sleep(500)
+    }
+
+    fun checkNavigation(){
+      //  val navController = mock()
+
     }
 
 }
