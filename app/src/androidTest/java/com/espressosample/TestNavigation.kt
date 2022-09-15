@@ -27,7 +27,7 @@ class TestNavigation {
         launchFragmentInContainer<EmptyFragment>().onFragment {
             Navigation.setViewNavController(it.requireView(), mockNavController)
         }
-        
+
         onView(ViewMatchers.withId(R.id.btnGoSecond)).perform(ViewActions.click())
         verify(mockNavController).navigate(EmptyFragmentDirections.actionEmptyFragmentToSecondFragment())
 
