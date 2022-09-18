@@ -36,4 +36,13 @@ class MainActivityTest {
         Thread.sleep(500)
     }
 
+    @Test
+    fun checkButtonVisibility(){
+        onView(withId(R.id.username)).perform(typeText("Furkan"))
+        onView(withId(R.id.password)).perform(typeText("123456"))
+        onView(withId(R.id.rePassword)).perform(typeText("123456"))
+
+        onView(withId(R.id.login)).check(matches(isDisplayed()))
+
+    }
 }
