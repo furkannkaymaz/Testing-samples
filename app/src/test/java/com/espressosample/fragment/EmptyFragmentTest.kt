@@ -1,9 +1,11 @@
-package com.espressosample
+package com.espressosample.fragment
 
 import android.os.Build
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
+import com.espressosample.R
+import com.espressosample.launchFragmentInHiltContainer
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.android.testing.HiltTestApplication

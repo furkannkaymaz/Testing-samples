@@ -7,8 +7,7 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.google.common.truth.ExpectFailure.assertThat
-import org.junit.Assert.assertEquals
+import com.espressosample.fragment.EmptyFragment
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mockito.mock
