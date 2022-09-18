@@ -39,8 +39,17 @@ class LoginHelperTest{
     fun passwordLetterUnderSixReturnFalse(){
         val result = LoginHelper.confirmLogin(
             "Furkan",
-            "12345",
-            "12345",
+            "14",
+            "15",
+        )
+        assertThat(result).isFalse()
+    }
+    @Test
+    fun passwordAndRepassordDontMatchReturnFalse(){
+        val result = LoginHelper.confirmLogin(
+            "Furkan",
+            "123456789",
+            "12345678910",
         )
         assertThat(result).isFalse()
     }
